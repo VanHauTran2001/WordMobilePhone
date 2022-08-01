@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DetailsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iphone1"
+            android:id="@+id/imgDetails"/>
+
+        <TextView
+            android:id="@+id/txtNameDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgDetails"
+            android:gravity="center_horizontal"
+            android:text="Iphone 7 plus"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNameDetails"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/custom_button"
+            android:padding="20dp"
+            android:id="@+id/btnNext"
+            android:text="Next"
+            android:textSize="25dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNameDetails"
+            android:background="@drawable/custom_button"
+            android:padding="20dp"
+            android:text="Click Now"
+            android:id="@+id/btnClick"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:textSize="25dp" />
+    </RelativeLayout>
+</layout>
